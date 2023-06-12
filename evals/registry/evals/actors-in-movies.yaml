@@ -1,0 +1,8 @@
+actors-in-movies:
+  id: actors-in-movies.dev.v0
+  description: Test the model's ability to name actors in movies.
+  metrics: [accuracy]
+actors-in-movies.dev.v0:
+  class: evals.elsuite.basic.match:Match
+  args:
+    samples_jsonl: actors_in_movies/samples.jsonl
